@@ -1,0 +1,49 @@
+a {
+	text-decoration: none;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family: "Courier New", Courier, Monaco;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 8pt;
+	z-index: 10;
+	color: #FFF;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+body {
+	background-color: #000;
+	color: #FFF;
+}
+
+pre {
+	font-size: 0.6875em;
+	font-family: "Courier New", Courier, Monaco;
+	padding-top: 2.5%;
+	padding-left: 0.5%;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.video-background {
+	background: #000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -99;
+}
+
+.video-foreground,
+.video-background iframe {
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.055);
+	pointer-events: none;
+}
+
+.ytplayer {
+	pointer-events: none;
+}
