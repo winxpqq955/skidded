@@ -1,5 +1,5 @@
 - Removed Exhibition
 + Added SigmaClient Killaura
-+ Added 
++ Added Ave HUD
 + Copy Chinazzhop
-+ Aadded InvalidClient Scaffold
++ Added InvalidClient Scaffold
