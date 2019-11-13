@@ -1,0 +1,42 @@
++ Added Slider to GuiAltManager
++ Added Remove NotWorking/Banned to GuiAltManager
++ Alt Manager marks expired Altening alts as NotWorking
+> Alt Manager sorting mode saves when exiting the Gui
++ Added Generate Max Alts button to AlteningGui
++ All Generated alts are automatically added to Alt Manager
+
++ Binds now supports mouse buttons.
+
+> Fixed ESC closing menu when binding a key
+
+> Fixed AutoArmor crashing with non armor items
+
++ Added Team check to BowAimbot
+
++ Added Fake AutoBlock
+> Fixed Vanilla NoSlowdown for Killaura
+For the best AutoBlock experience, use Vanilla no Ground
+on NoSlowdown with NoRelief on Killaura
+
++ Added Blink
+
+> Phase is now disabled when you toggle movement modules
+
++ Added Team check to TargetStrafe
++ TargetStrafe now changes direction when you hit a wall/block
+
+> Fixed ChestStealer not considering Fire Aspect for damage
+
+> Fixed SurvivalNuker attempting to break bedrock
+
+> Fixed InventoryCleaner not cleaning when in GuiChat
+
++ Added Creer (Spooky)
+
++ Added Ping option to 2D ESP and Nametags
++ Optimized 2D Tags
+
+> Fixed Team check not working
+
++ Added Traps
+- Traps are permanently back
