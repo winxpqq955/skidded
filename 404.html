@@ -1,0 +1,119 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>SKIDSENSE ADMIN</TITLE>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=GB2312">
+<meta content="Microsoft Visual Studio.NET 7.0" name="GENERATOR">
+<meta content="Visual Basic 7.0" name="CODE_LANGUAGE">
+<meta content="JavaScript" name="vs_defaultClientScript">
+<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+<style type="text/css">
+			BODY { BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 9pt; MARGIN: 0px; BORDER-LEFT: 0px; CURSOR: default; BORDER-BOTTOM: 0px; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #ffffff }
+			TD { FONT-SIZE: 12px }
+			.font-title { FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #153290; PADDING-TOP: 8px }
+			INPUT { BORDER-RIGHT: #a59e9c 1px solid; BORDER-TOP: #a59e9c 1px solid; BORDER-LEFT: #a59e9c 1px solid; WIDTH: 81px; BORDER-BOTTOM: #a59e9c 1px solid; HEIGHT: 17px; bgcolor: #ffffff }
+			BUTTON { BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; WIDTH: 43px; CURSOR: hand; BORDER-BOTTOM: medium none; HEIGHT: 19px }
+		</style>
+<script language="javascript" src="_common/scripts/global.js"></script>
+<script language="javascript" src="_common/scripts/md5-min.js"></script>
+<script language="javascript" src="Security/SelectCurrentBU.js"></script>
+<script language="javascript" src="ActiveX/ActiveX.js"></script>
+<script language="javascript" src="_controls/util/util.js"></script>
+<script language="javascript" src="Security/PasswordPolicy.js"></script>
+
+<META content="MSHTML 6.00.2600.0" name="GENERATOR">
+<style type="text/css">TABLE { FONT-SIZE: 9pt; BORDER-COLLAPSE: collapse }
+		</style>
+</HEAD>
+<BODY bgColor="#4292de" onload="checkSiteSetting();checkLMS();initialize();" style="overflow-x:hidden;overflow-y:hidden">
+<form name="Form1" method="post" action="Default.aspx.html" id="Form1" target="_top">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTc5NjgzMDgzMQ9kFgICAQ9kFgICFQ8WAh4EVGV4dAWaATxzY3JpcHQgbGFuZ3VhZ2U9ImphdmFzY3JpcHQiPnZhciBpc0VuYWJsZUxtcyA9IGZhbHNlO3ZhciBpc0luaXRMbXMgPSBmYWxzZTs8L3NjcmlwdD48c2NyaXB0IGxhbmd1YWdlPSJqYXZhc2NyaXB0Ij52YXIgaXNTaXRlU2V0dGluZ1ZhbGlkID0gdHJ1ZTs8L3NjcmlwdD5kZPn0QvbcsfVQjLgRnmk+XTP1Muj0" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCQLo9MrVAQLw5fGmAwLY79j5DALqwMLNCQLCv+z3AwKAr9D1DwKj1dLzBwK1qbSWCwL0yOj4Bfc5ws3XB/SvtlibnI5TECcEc1nS" />
+<div id="__divRuning" style="POSITION: absolute; Z-INDEX: 108; width:260px; height:47px; BACKGROUND-COLOR: white; border:#9E9E9B 1px solid; font:bold 14px; color:#FF5A00; text-align:center; padding-top:16px; DISPLAY:none;">校验用户名和密码，请稍候...</div>
+<script>document.all["__divRuning"].style.left=(document.body.clientWidth-200)/2;document.all["__divRuning"].style.top=(document.body.clientHeight-47)/2;</script>
+<input name="txtSysTitle" type="text" value="FuckVladymyrV1.0" id="txtSysTitle" style="DISPLAY:none" />
+<input name="txtLinkPage" type="text" id="txtLinkPage" style="DISPLAY:none" />
+<input name="txtMyCurrentCompany" type="text" id="txtMyCurrentCompany" style="DISPLAY:none" />
+<input type="hidden" name="txtComplexPolicyType" id="txtComplexPolicyType" />
+<input type="hidden" name="txtMinLengthPolicy" id="txtMinLengthPolicy" />
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+<tr>
+<td align="left" valign="top" height="5">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="5">
+<tr>
+<td width="8" height="5"><img src="images/index_middledown_topleft.jpg" width="8" height="5"></td>
+<td width="1009" background="images/index_middledown_topbg.jpg"></td>
+<td width="7"><img src="images/index_middledown_topright.jpg" width="7" height="5"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="6" background="images/index_bgleft.jpg" height="90"></td>
+<td align="right" valign="top" style="PADDING-RIGHT:6px; PADDING-LEFT:6px; PADDING-BOTTOM:6px; PADDING-TOP:6px" height="90">
+</td>
+<td width="7" background="images/index_bgright.jpg" height="90"></td>
+</tr>
+<tr>
+<td width="6" background="images/index_bgleft.jpg"></td>
+<td align="center" valign="middle">
+<table width="458" border="0" cellspacing="0" cellpadding="0" height="213" background="images/login_middlemiddle_bg.jpg">
+<tr>
+<td height="213" width="7" align="left" valign="top" rowspan="3"><img src="images/login_middleleft_bg.jpg"></td>
+<td width="444" align="left" valign="bottom" height="59" style="PADDING-LEFT:12px"><img src="images/crm_log_header.jpg" id="imgLogo" /></td>
+<td width="7" align="left" valign="top" rowspan="3"><img src="images/login_middleright_bg.jpg"></td>
+</tr>
+<tr>
+<td width="444" align="left" valign="middle" height="127" style="PADDING-LEFT:12px">
+<table width="98%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="35" align="left" valign="top"><img src="images/login_customer.jpg"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#e6e6e6"></td>
+</tr>
+<tr>
+<td style="PADDING-TOP:10px">
+用户名：<input name="txtUserCode" type="text" id="txtUserCode" onkeydown="if(event.keyCode==13) event.keyCode=9;" />
+密 码：<input name="txtPassWord" type="password" id="txtPassWord" onkeydown="if(event.keyCode==13) {event.keyCode=9; if ( validateForm() ){login();}}" />
+&nbsp;<button id="btnLogin" style="FILTER:gray;BACKGROUND-IMAGE:url(images/login_anniulogin_alter.jpg)" type="button" onmouseover="this.style.filter='';;" onmouseout="this.style.filter='gray'" onclick="Form1.txtUserCode.value='';Form1.txtPassWord.value='';Form1.txtUserCode.focus();"></button>
+&nbsp; <button id="btnReset" style="FILTER:gray;BACKGROUND-IMAGE:url(images/login_anniurewrite_alter.jpg)" type="button" onmouseover="this.style.filter=''" onmouseout="this.style.filter='gray'" onclick="Form1.txtUserCode.value='';Form1.txtPassWord.value='';Form1.txtUserCode.focus();">
+</button>
+<input type="submit" name="SubmitForm" value="" id="SubmitForm" style="DISPLAY:none" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="444" align="center" valign="middle" height="27"><font color="#153290">SkidSense &copy; 2019-2020</font></td>
+</tr>
+</table><br>
+</td>
+<td width="7" background="images/index_bgright.jpg"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="150">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+<tr>
+<td width="6" background="images/index_bgleft.jpg"></td>
+<td background="images/index_bottom.jpg" valign="bottom" style="padding:15px;"></td>
+<td width="7" background="images/index_bgright.jpg"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<script language="javascript">var isEnableLms = false;var isInitLms = false;</script><script language="javascript">var isSiteSettingValid = true;</script>
+</form>
+<iframe src="ActiveX/TrustSite/SetTrustSite.htm" style="display:none;"></iframe>
+
+</BODY>
+</HTML>
